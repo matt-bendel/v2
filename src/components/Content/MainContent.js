@@ -1,0 +1,52 @@
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+import { isMobile } from 'react-device-detect';
+import Intro from './Intro'
+import About from './About'
+
+class MainContent extends React.Component {
+    getContent() {
+        if (isMobile) {
+            return(
+                <div className="main-section" style={{margin: '0', width: '100%', display: 'block'}}>
+                    <div style={{height: '100px', width: '80%', margin: '0', marginBottom: '25px', marginLeft: '5%', overflow: 'auto'}}>
+                        <Fade bottom delay={5000}>
+                            <p className="page-title" style={{fontSize: '65px'}}>Hello There</p>
+                        </Fade>
+                    </div>
+                    <Fade bottom delay={5500}>
+                        <Intro></Intro>
+                    </Fade>
+                    <div className="spacer"></div>
+                    <Fade bottom>
+                        <About></About>
+                    </Fade>
+                    <div className="spacer"></div>
+                </div>
+            );
+        }
+        return(
+            <div className="main-section" style={{textAlign: 'left'}}>
+                <div style={{height: '120px', width: '80%', margin: '0', marginBottom: '25px', marginLeft: '10%', overflow: 'hidden'}}>
+                    <Fade bottom delay={5000}>
+                        <p className="page-title">Hello There</p>
+                    </Fade>
+                </div>
+                <Fade bottom delay={5500}>
+                    <Intro></Intro>
+                </Fade>
+                <div className="spacer"></div>
+                <Fade bottom>
+                    <About></About>
+                </Fade>
+                <div className="spacer"></div>
+            </div>
+        );
+    }
+
+    render() {
+        return this.getContent();
+    }
+}
+
+export default MainContent;
