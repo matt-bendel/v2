@@ -51,7 +51,7 @@ class App extends React.Component{
             return(
                 <div className="App">
                     <TopNav></TopNav>
-                    {/*<MainContent />*/}
+                    <MainContent />
                     <footer>
                         <div style={{margin: 'auto', width: '50%', height: '60px', textAlign: 'center'}}>
                             <a href="https://github.com/matt-bendel" style={{textDecoration: 'none'}}>
