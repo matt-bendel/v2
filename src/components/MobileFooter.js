@@ -5,8 +5,8 @@ class MobileFooter extends React.Component {
         return(
             <footer>
                 <div style={{margin: 'auto', width: '100%', height: '80px', textAlign: 'center'}}>
-                    <div className="row">
-                        <div className="center">
+                    <div className="row" style={{marginBottom: '10px'}}>
+                        <div className="center" style={{marginRight: '25px'}}>
                             <a href="https://github.com/matt-bendel" style={{height: '25px', width: '25px', marginLeft: '25px'}}>
                                 <svg className="color-svg-mobile" role="img" style={{height: '25px', width: '25px'}} viewBox="0 0 24 24"
                                      xmlns="http://www.w3.org/2000/svg">
