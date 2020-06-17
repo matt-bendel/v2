@@ -12,12 +12,12 @@ class MainContent extends React.Component {
         if (isMobile) {
             return(
                 <div className="main-section" style={{margin: '0', width: '100%', display: 'block'}}>
-                    <div style={{height: '100px', width: '80%', margin: '0', marginBottom: '25px', marginLeft: '5%', overflow: 'auto'}}>
-                        <Fade bottom delay={5000}>
-                            <p className="page-title" style={{fontSize: '65px'}}>Hello There</p>
+                    <div style={{height: '100px', width: '100%', margin: '0', marginBottom: '25px', overflow: 'auto'}}>
+                        <Fade bottom delay={3250}>
+                            <p className="page-title" style={{fontSize: '50px'}}>Hello There</p>
                         </Fade>
                     </div>
-                    <Fade bottom delay={5500}>
+                    <Fade bottom delay={3750}>
                         <Intro></Intro>
                     </Fade>
                     <div className="spacer"></div>

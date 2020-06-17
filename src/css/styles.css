@@ -478,6 +478,10 @@ ul li.social-container-list:hover{
     fill: white;
 }
 
+.color-svg-mobile {
+    fill: darkseagreen;
+}
+
 .color-svg:hover {
     fill: darkseagreen;
 }

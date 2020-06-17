@@ -4,7 +4,7 @@ import LeftSide from './components/Sides/LeftSide'
 import MainContent from './components/Content/MainContent'
 import RightSide from './components/Sides/RightSide';
 import { isMobile } from 'react-device-detect';
-
+import MobileFooter from './components/MobileFooter'
 import './App.scss';
 import './css/styles.css';
 import Reveal from "react-reveal/Reveal";
@@ -52,13 +52,7 @@ class App extends React.Component{
                 <div className="App">
                     <TopNav></TopNav>
                     <MainContent />
-                    <footer>
-                        <div style={{margin: 'auto', width: '50%', height: '60px', textAlign: 'center'}}>
-                            <a href="https://github.com/matt-bendel" style={{textDecoration: 'none'}}>
-                                <p className="footer-p">Designed & Built by Matt Bendel</p>
-                            </a>
-                        </div>
-                    </footer>
+                    <MobileFooter></MobileFooter>
                 </div>
             );
         }
