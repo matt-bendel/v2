@@ -3,6 +3,7 @@ import TopNav from './components/TopNav/TopNav';
 import LeftSide from './components/Sides/LeftSide'
 import MainContent from './components/Content/MainContent'
 import RightSide from './components/Sides/RightSide';
+import { isMobile } from 'react-device-detect';
 
 import './App.scss';
 import './css/styles.css';
@@ -21,30 +22,38 @@ class App extends React.Component{
     }
 
     render() {
-        // if (this.state.loading) {
-        //     return(
-        //         <div className="App">
-        //             <Reveal effect="shrink" delay={4500}>
-        //                 <div className="preload">
-        //                     <div id="logoPreLoad" className="square" style={{textAlign: 'center'}}>
-        //                         <span className="l1"></span>
-        //                         <span className="l2"></span>
-        //                         <span className="l3"></span>
-        //                         <span className="l4"></span>
-        //                         <p className="preload-logo" style={{
-        //                             margin: '0',
-        //                             marginLeft: '3px',
-        //                             textAlign: 'center',
-        //                             selfAlign: 'center',
-        //                             width: '175px',
-        //                             height: '150px'
-        //                         }}>MB</p>
-        //                     </div>
-        //                 </div>
-        //             </Reveal>
-        //         </div>
-        //     );
-        // }
+        if (this.state.loading) {
+            return(
+                <div className="App">
+                    <Reveal effect="shrink" delay={4500}>
+                        <div className="preload">
+                            <div id="logoPreLoad" className="square" style={{textAlign: 'center'}}>
+                                <span className="l1"></span>
+                                <span className="l2"></span>
+                                <span className="l3"></span>
+                                <span className="l4"></span>
+                                <p className="preload-logo" style={{
+                                    margin: '0',
+                                    marginLeft: '3px',
+                                    textAlign: 'center',
+                                    selfAlign: 'center',
+                                    width: '175px',
+                                    height: '150px'
+                                }}>MB</p>
+                            </div>
+                        </div>
+                    </Reveal>
+                </div>
+            );
+        }
+
+        if (isMobile) {
+            return(
+                <div style={{color: 'orange'}}>
+                    Hello World!
+                </div>
+            )
+        }
 
         return (
             <div className="App">
