@@ -1,8 +1,11 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { isMobile } from 'react-device-detect';
-import Intro from './Intro'
-import About from './About'
+import Intro from './Intro';
+import About from './About';
+import WorkExp from './WorkExp';
+import Contact from './Contact';
+import PP from './PP'
 
 class MainContent extends React.Component {
     getContent() {
@@ -18,9 +21,13 @@ class MainContent extends React.Component {
                         <Intro></Intro>
                     </Fade>
                     <div className="spacer"></div>
-                    <Fade bottom>
                         <About></About>
-                    </Fade>
+                    <div className="spacer"></div>
+                        <WorkExp></WorkExp>
+                    <div className="spacer"></div>
+                        <PP></PP>
+                    <div className="spacer"></div>
+                    <Contact></Contact>
                     <div className="spacer"></div>
                 </div>
             );
@@ -36,9 +43,13 @@ class MainContent extends React.Component {
                     <Intro></Intro>
                 </Fade>
                 <div className="spacer"></div>
-                <Fade bottom>
                     <About></About>
-                </Fade>
+                <div className="spacer"></div>
+                    <WorkExp></WorkExp>
+                <div className="spacer"></div>
+                    <PP></PP>
+                <div className="spacer"></div>
+                    <Contact></Contact>
                 <div className="spacer"></div>
             </div>
         );

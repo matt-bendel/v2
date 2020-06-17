@@ -143,22 +143,22 @@ body {
     -webkit-animation-name: l4;
     -webkit-animation-delay: 0.9s;
 }
-@-webkit-keyframes l1 {
+@keyframes l1 {
     0%    { height: 0; background: darkseagreen; }
     100%  { height: 150px; background: darkseagreen; }
 }
 
-@-webkit-keyframes l2 {
+@keyframes l2 {
     0%    { width: 0; background: darkseagreen; }
     100%  { width: 180px; background: darkseagreen; }
 }
 
-@-webkit-keyframes l3 {
+@keyframes l3 {
     0%    { height: 0; background: darkseagreen; }
     100%  { height: 150px; background: darkseagreen; }
 }
 
-@-webkit-keyframes l4 {
+@keyframes l4 {
     0%    { width: 0; background: darkseagreen; }
     100%  { width: 180px; background: darkseagreen; }
 }
@@ -194,6 +194,7 @@ body {
     background: darkseagreen;
     opacity: 1;
     float: left;
+    z-index: 99999;
     width: 50%;
     height: 60px;
     animation: SlideOutLeft 1s ease;
@@ -203,6 +204,7 @@ body {
     display: inline-block;
     background: darkseagreen;
     opacity: 1;
+    z-index: 99999;
     float: left;
     overflow: hidden;
     width: 50%;

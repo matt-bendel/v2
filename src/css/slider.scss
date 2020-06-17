@@ -1,0 +1,25 @@
+@import "~react-awesome-slider/src/core/styles.scss";
+.#{$root-element} {
+    --slider-height-percentage: 60%;
+    --slider-transition-duration: 700ms;
+    --organic-arrow-thickness: 4px;
+    --organic-arrow-border-radius: 0px;
+    --organic-arrow-height: 40px;
+    --organic-arrow-color: darkseagreen;
+    --control-button-width: 20%;
+    --control-button-height: 25%;
+    --control-button-background: transparent;
+    --control-bullet-color: darkgrey;
+    --control-bullet-active-color: darkseagreen;
+    --loader-bar-color: darkseagreen;
+    --loader-bar-height: 0px;
+    --scale-out-scale: 0.85;
+
+    //&--exit {
+    //    &.#{$root-element}--moveRight,
+    //    &.#{$root-element}--moveLeft {
+    //        animation: scaleOut var(--slider-transition-duration) both
+    //        var(--transition-bezier);
+    //    }
+    //}
+}

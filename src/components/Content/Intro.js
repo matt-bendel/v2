@@ -1,5 +1,6 @@
 import React from 'react';
 import { isMobile } from 'react-device-detect';
+import matt from './../../images/matt.png';
 
 class Intro extends React.Component {
     getEmail () {
@@ -19,7 +20,7 @@ class Intro extends React.Component {
                     <div className="row">
                         <div className="col-md-4">
                             {/*TODO: Add Images*/}
-                            <div className="img-card" style={{height: '300px', position: 'relative', visibility: 'visible', backgroundImage: 'none'}}></div>
+                            <div className="img-card" style={{height: '300px', position: 'relative', visibility: 'visible', backgroundImage: 'url(' + matt + ')'}}></div>
                             <div className="center">
                                 <a href={this.getEmail()} target="_blank" style={{textDecoration: 'none'}}>
                                     <div className="btn">Reach Out</div>
@@ -67,7 +68,7 @@ class Intro extends React.Component {
                 <div className="row">
                     <div className="col-md-4">
                         {/*TODO: Add Images*/}
-                        <div className="img-card" style={{height: '300px', position: 'relative', visibility: 'visible', backgroundImage: 'none'}}></div>
+                        <div className="img-card" style={{height: '300px', position: 'relative', visibility: 'visible', backgroundImage: 'url(' + matt + ')'}}></div>
                         <div className="center">
                             <a href={this.getEmail()} target="_blank" style={{textDecoration: 'none'}}>
                                 <div className="btn">Reach Out</div>
