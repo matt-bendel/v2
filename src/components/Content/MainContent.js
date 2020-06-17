@@ -21,7 +21,7 @@ class MainContent extends React.Component {
                         <Intro></Intro>
                     </Fade>
                     <div className="spacer"></div>
-                    {/*<About></About>*/}
+                    <About></About>
                     <div className="spacer"></div>
                 </div>
             );

@@ -13,7 +13,7 @@ class About extends React.Component {
         if (isMobile) {
             return(
                 <div id="about" style={{visibility: 'hidden', paddingTop: '100px'}}>
-                    <div className="content-div" style={{marginTop: '50px', overflow: 'auto'}}>
+                    <div className="content-div" style={{overflow: 'auto'}}>
                         <div style={{height: '100px', width: '80%', margin: '0', marginLeft: '5px', marginBottom: '3%'}}>
                             <p className="page-title" style={{fontSize: '40px'}}>About</p>
                         </div>
