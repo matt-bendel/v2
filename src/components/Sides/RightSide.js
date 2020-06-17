@@ -12,7 +12,7 @@ class RightSide extends React.Component {
                 <div style={{width: '100%', height: '100px'}}>
                     <div className="vline-right" style={{marginBottom: '20px'}}></div>
                 </div>
-                <div style={{height: '287.5px'}}></div>
+                <div style={{height: '287.5px', marginBottom: '20px'}}></div>
                 <div style={{width: '100%', height: '100px'}}>
                     <div className="vline-right" style={{marginTop: '20px'}}></div>
                 </div>
