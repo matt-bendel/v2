@@ -1,6 +1,10 @@
 import React from 'react';
 import NavLinks from './NavLinks';
 import { isMobile } from 'react-device-detect';
+import { slide as Menu } from 'react-burger-menu'
+import Slide from 'react-reveal/Slide'
+import './../../css/styles.css'
+import burgerStyle from './../../css/burgerStyles.css'
 
 class TopNav extends React.Component {
     getNav() {
@@ -8,16 +12,20 @@ class TopNav extends React.Component {
             return(
                 <header className="header-down">
                     <div className="container-left">
+                        <Menu style={burgerStyle}>
+                            <a id="about-li" className="mobileMenu" href="#about">About</a>
+                            <a id="work-exp-li" className="mobileMenu" href="#work-exp">Work Experience</a>
+                            <a id="personal-projects-li" className="mobileMenu" href="#personal-projects">My Projects</a>
+                            <a id="contact-li" className="mobileMenu" href="#contact">Contact</a>
+                            <a id="resume-li" className="mobileMenu" href="#">Resume</a>
+                        </Menu>
+                    </div>
+                    <div className="container-right">
                         <a href="/">
-                            <div className="logo">
+                            <div className="logo-mobile">
                                 <p>MB</p>
                             </div>
                         </a>
-                    </div>
-                    <div className="container-right">
-                        <nav>
-
-                        </nav>
                     </div>
                 </header>
             );
@@ -31,7 +39,7 @@ class TopNav extends React.Component {
                 </a>
             </div>
             <div className="container-right">
-                <nav>
+                <nav className="desktopNav">
                     <ul>
                         <NavLinks display={'About'} href={'#about'} wait={2750}></NavLinks>
                         <NavLinks display={'Work Experience'} href={'#work-exp'} wait={3000}></NavLinks>

@@ -1,0 +1,114 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+    margin-top: 15px;
+    margin-left: 10px;
+    animation: SlideDown 2.5s ease;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #444444;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #000000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: darkseagreen;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #222222;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+    text-decoration: none;
+}
+
+/* Individual item */
+.bm-item {
+    display: block;
+    border: none;
+    text-decoration: none;
+    color: darkseagreen;
+    margin-bottom: 20px;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    text-decoration: none;
+    /*background: rgba(0, 0, 0, 0.3);*/
+}
+
+.mobileMenu {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.mobileMenu:hover{
+    border: none;
+    text-decoration: none;
+    color: seagreen;
+}
+
+@keyframes SlideDown {
+    0%{
+        tranform: translateY(-250px);
+        -ms-transform: translateY(-250px); /* IE 9 */
+        -webkit-transform: translateY(-250px); /* Safari and Chrome */
+        -o-transform: translateY(-250px); /* Opera */
+        -moz-transform: translateY(-250px); /* Firefox */
+        opacity: 0;
+    }
+    70% {
+        tranform: translateY(-250px);
+        -ms-transform: translateY(-250px); /* IE 9 */
+        -webkit-transform: translateY(-250px); /* Safari and Chrome */
+        -o-transform: translateY(-250px); /* Opera */
+        -moz-transform: translateY(-250px); /* Firefox */
+        opacity: 0;
+    }
+    100%{
+        tansform: translateY(0px);
+        -ms-transform: translateY(0px); /* IE 9 */
+        -webkit-transform: translateY(0px); /* Safari and Chrome */
+        -o-transform: translateY(0px); /* Opera */
+        -moz-transform: translateY(0px); /* Firefox */
+        opacity: 1;
+    }
+}

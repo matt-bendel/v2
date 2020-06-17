@@ -200,16 +200,24 @@ body {
     animation: SlideOutLeft 1s ease;
 }
 
-.currentWork {
-
-}
-
 .container-right {
     display: inline-block;
     background: darkseagreen;
     opacity: 1;
     z-index: 99999;
     float: left;
+    overflow: hidden;
+    width: 50%;
+    height: 60px;
+    animation: SlideOutRight 1s ease;
+}
+
+.container-right-mobile {
+    display: inline-block;
+    background: darkseagreen;
+    opacity: 1;
+    z-index: 99999;
+    float: right;
     overflow: hidden;
     width: 50%;
     height: 60px;
@@ -305,6 +313,23 @@ footer {
     overflow: hidden;
 }
 
+.logo-mobile {
+    float: right;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    font-size: 30px;
+    right: 0;
+    top: 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    border: 3px solid #444444;
+    color: #444444;
+    position: relative;
+    animation: SlideDown 3s ease;
+    overflow: hidden;
+}
+
 .logo:hover {
     color: black;
     border-color: black;
@@ -314,7 +339,7 @@ footer {
     height: 200px;
 }
 
-nav {
+.desktopNav {
     float: left;
 }
 
@@ -351,13 +376,13 @@ nav {
     background-color: darkseagreen;
 }
 
-nav ul {
+.desktopNav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav li {
+.desktopNav li {
     display: inline-block;
     margin-left: 20px;
     padding-top: 23px;
@@ -366,18 +391,18 @@ nav li {
     overflow: hidden;
 }
 
-nav a {
+.desktopNav a {
     color: #444;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
 }
 
-nav a:hover {
+.desktopNav a:hover {
     color: black;
 }
 
-nav a::before {
+.desktopNav a::before {
     content: '';
     display: block;
     height: 5px;
@@ -390,7 +415,7 @@ nav a::before {
     transition: all ease-in-out 250ms;
 }
 
-nav a:hover::before {
+.desktopNav a:hover::before {
     width: 100%;
 }
 
