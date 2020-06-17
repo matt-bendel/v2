@@ -21,30 +21,30 @@ class App extends React.Component{
     }
 
     render() {
-        if (this.state.loading) {
-            return(
-                <div className="App">
-                    <Reveal effect="shrink" delay={4500}>
-                        <div className="preload">
-                            <div id="logoPreLoad" className="square" style={{textAlign: 'center'}}>
-                                <span className="l1"></span>
-                                <span className="l2"></span>
-                                <span className="l3"></span>
-                                <span className="l4"></span>
-                                <p className="preload-logo" style={{
-                                    margin: '0',
-                                    marginLeft: '3px',
-                                    textAlign: 'center',
-                                    selfAlign: 'center',
-                                    width: '175px',
-                                    height: '150px'
-                                }}>MB</p>
-                            </div>
-                        </div>
-                    </Reveal>
-                </div>
-            );
-        }
+        // if (this.state.loading) {
+        //     return(
+        //         <div className="App">
+        //             <Reveal effect="shrink" delay={4500}>
+        //                 <div className="preload">
+        //                     <div id="logoPreLoad" className="square" style={{textAlign: 'center'}}>
+        //                         <span className="l1"></span>
+        //                         <span className="l2"></span>
+        //                         <span className="l3"></span>
+        //                         <span className="l4"></span>
+        //                         <p className="preload-logo" style={{
+        //                             margin: '0',
+        //                             marginLeft: '3px',
+        //                             textAlign: 'center',
+        //                             selfAlign: 'center',
+        //                             width: '175px',
+        //                             height: '150px'
+        //                         }}>MB</p>
+        //                     </div>
+        //                 </div>
+        //             </Reveal>
+        //         </div>
+        //     );
+        // }
 
         return (
             <div className="App">
