@@ -11,7 +11,7 @@ class MainContent extends React.Component {
     getContent() {
         if (isMobile) {
             return(
-                <div className="main-section" style={{margin: '0', width: '100%', display: 'block'}}>
+                <div className="main-section" style={{margin: '0', width: '100%', display: 'block', textAlign: 'left'}}>
                     <div style={{height: '100px', width: '100%', margin: '0', marginBottom: '25px', overflow: 'auto'}}>
                         <Fade bottom delay={3250}>
                             <p className="page-title" style={{fontSize: '50px'}}>Hello There</p>

@@ -509,6 +509,14 @@ ul li.social-container-list:hover{
     /*animation: SlideUp 5.75s;*/
 }
 
+.content-div-mobile {
+    margin: 0;
+    margin-left: 5%;
+    width: 90%;
+    overflow: hidden;
+    /*animation: SlideUp 5.75s;*/
+}
+
 .fancy {
     columns: 2;
     -webkit-columns: 2;

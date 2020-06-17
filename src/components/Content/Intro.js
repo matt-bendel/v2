@@ -13,7 +13,7 @@ class Intro extends React.Component {
     getIntro() {
         if (isMobile) {
             return(
-                <div className="content-div">
+                <div className="content-div-mobile">
                     <p style={{fontFamily: 'Courier New', fontSize: '16px', color: 'darkseagreen', fontWeight: 'normal', margin: '0', marginLeft: '5px'}}>My
                         name is</p>
                     <p className="page-title" style={{fontSize: '40px', animation: 'none', marginBottom: '3%'}}>Matt Bendel</p>
@@ -47,12 +47,12 @@ class Intro extends React.Component {
                                 </p>
                             </div>
                             <div className="center">
-                                <ul className="fancy" style={{fontSize: '14px'}}>
-                                    <li><span>Python</span></li>
-                                    <li><span>PHP</span></li>
+                                <ul className="fancy" style={{fontSize: '14px', marginRight: '5px'}}>
+                                    <li style={{marginBottom: '10px'}}><span>Python</span></li>
+                                    <li style={{marginBottom: '10px'}}><span>PHP</span></li>
                                     <li><span>Ruby</span></li>
-                                    <li><span>HTML</span></li>
-                                    <li><span>C#</span></li>
+                                    <li style={{marginBottom: '10px'}}><span>HTML</span></li>
+                                    <li style={{marginBottom: '10px'}}><span>C#</span></li>
                                     <li><span>Unity</span></li>
                                 </ul>
                             </div>

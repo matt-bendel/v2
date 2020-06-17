@@ -13,10 +13,8 @@ class About extends React.Component {
         if (isMobile) {
             return(
                 <div id="about" style={{visibility: 'hidden', paddingTop: '100px'}}>
-                    <div className="content-div" style={{overflow: 'auto'}}>
-                        <div style={{height: '100px', width: '80%', margin: '0', marginLeft: '5px', marginBottom: '3%'}}>
-                            <p className="page-title" style={{fontSize: '40px'}}>About</p>
-                        </div>
+                    <div className="content-div-mobile" style={{overflow: 'auto'}}>
+                        <p className="page-title" style={{fontSize: '40px', marginBottom: '3%'}}>About</p>
                         <div className="row">
                             <div className="col-md-8" style={{color: 'darkgrey', fontSize: '14px'}}>
                                 <p>
@@ -42,8 +40,10 @@ class About extends React.Component {
                                 </p>
                             </div>
                             <div className="col-md-4" style={{padding: '0', overflow: 'hidden'}}>
-                                <div style={{height: '300px', margin: '0', marginTop: '15px', overflow: 'hidden'}}>
-                                    <div id="1-img" className="img-card selected" style={{height: '300px', backgroundImage: 'url(' + dis + ')'}}></div>
+                                <div className="center">
+                                    <div style={{height: '300px', margin: '0', marginTop: '15px', overflow: 'hidden'}}>
+                                        <div id="1-img" className="img-card selected" style={{height: '300px', backgroundImage: 'url(' + dis + ')'}}></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
