@@ -13,13 +13,12 @@ class Contact extends React.Component {
     getContact() {
         if (isMobile) {
             return(
-                <div id="contact" style={{visibility: 'hidden', paddingTop: '100px'}}>
-                    <div className="content-div" style={{marginTop: '50px'}}>
-                        <div style={{height: '100px', width: '80%', margin: '0', marginLeft: '5px'}}>
-                            <p className="page-title" style={{fontSize: '40px'}}>Reach Out</p>
-                        </div>
+                // TODO: Change back visibility
+                <div id="contact" style={{visibility: 'visible', paddingTop: '100px'}}>
+                    <div className="content-div-mobile" style={{marginTop: '50px'}}>
+                        <p className="page-title" style={{fontSize: '40px', marginBottom: '3%'}}>Reach Out</p>
                         <div>
-                            <p style={{color: 'darkgrey', fontSize: '18px'}}>If you have any questions about me, my previous
+                            <p style={{color: 'darkgrey', fontSize: '16px'}}>If you have any questions about me, my previous
                                 experience, or just want to
                                 chat, feel free to reach out. I will get back to you as quickly as I can!
                             </p>
