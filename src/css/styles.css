@@ -200,6 +200,10 @@ body {
     animation: SlideOutLeft 1s ease;
 }
 
+.currentWork {
+
+}
+
 .container-right {
     display: inline-block;
     background: darkseagreen;
@@ -534,6 +538,12 @@ ul li.social-container-list:hover{
     color: darkseagreen;
 }
 
+.work-button-selected {
+    animation: colorBorder 0.75s;
+    border-left-color: darkseagreen;
+    color: darkseagreen;
+}
+
 .work-list li button:hover {
     color: darkseagreen;
 }
@@ -583,7 +593,7 @@ a.company-link:hover::before{
 }
 
 .work-info {
-    visibility: hidden;
+    visibility: visible;
     position:absolute;
 }
 

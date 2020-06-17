@@ -36,26 +36,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
       $(document).ready(function () {
-        $('button.test').on('click', function () {
-          let oldId = $('.test.selected').attr('id');
-          $('button').removeClass('selected');
-          let oldEnd = oldId.lastIndexOf('-') + 1;
-          var oldStr = oldId.substr(0, oldEnd);
-          oldStr = '#' + oldStr + 'info';
-          $(oldStr).css('animation', 'SlideDownJobOld 1s')
-
-          let id = $(this).attr('id');
-          let end = id.lastIndexOf('-') + 1;
-          var baseStr = id.substr(0, end);
-          baseStr = '#' + baseStr + 'info';
-          $(baseStr).css('visibility', 'visible');
-          $(baseStr).css('animation', 'SlideDownJob 1s');
-          $(this).addClass('selected');
-          setTimeout(function(){
-            $(oldStr).css('visibility', 'hidden');
-          },800);
-        });
-
         $(document).on('scroll', function() {
           if($(window).scrollTop() + 200>=$('#about').position().top){
             $('#about').css('visibility', 'visible');
@@ -76,56 +56,6 @@
             $('#contact').css('visibility', 'visible');
             $('#contact').css('animation', 'SlideUpSlower 1s');
           }
-        })
-
-        $('#next').on('click', function () {
-          let oldStr = $('.img-card.selected').attr('id');
-          console.log(oldStr);
-          var oldIndex = parseInt(oldStr.charAt(0));
-          var newIndex;
-          var oldId = '#' + oldStr;
-          $(oldId).removeClass('selected');
-
-          if (oldIndex == 5) {
-            newIndex = 1;
-          } else {
-            newIndex = oldIndex + 1;
-          }
-
-          let newId = '#' + newIndex + '-img';
-
-          $(oldId).css('animation', 'SlideRightImgOld 0.75s');
-          $(newId).css('visibility', 'visible');
-          $(newId).css('animation', 'SlideRightImg 0.75s');
-          $(newId).addClass('selected');
-          setTimeout(function(){
-            $(oldId).css('visibility', 'hidden');
-          },400);
-        })
-
-        $('#previous').on('click', function () {
-          let oldStr = $('.img-card.selected').attr('id');
-          console.log(oldStr);
-          var oldIndex = parseInt(oldStr.charAt(0));
-          var newIndex;
-          var oldId = '#' + oldStr;
-          $(oldId).removeClass('selected');
-
-          if (oldIndex == 1) {
-            newIndex = 5;
-          } else {
-            newIndex = oldIndex - 1;
-          }
-
-          let newId = '#' + newIndex + '-img';
-
-          $(oldId).css('animation', 'SlideLeftImgOld 0.75s');
-          $(newId).css('visibility', 'visible');
-          $(newId).css('animation', 'SlideLeftImg 0.75s');
-          $(newId).addClass('selected');
-          setTimeout(function(){
-            $(oldId).css('visibility', 'hidden');
-          },400);
         })
       });
     </script>
