@@ -49,9 +49,7 @@ class App extends React.Component{
 
         if (isMobile) {
             return(
-                <div style={{color: 'orange'}}>
-                    Hello World!
-                </div>
+                <TopNav />
             )
         }
 
