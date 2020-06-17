@@ -12,7 +12,7 @@ class About extends React.Component {
     getAbout () {
         if (isMobile) {
             return(
-                <div id="about" style={{visibility: 'hidden', paddingTop: '100px'}}>
+                <div id="about" style={{visibility: 'hidden'}}>
                     <div className="content-div-mobile" style={{overflow: 'auto'}}>
                         <p className="page-title" style={{fontSize: '40px', marginBottom: '3%'}}>About</p>
                         <div className="row">
@@ -40,7 +40,7 @@ class About extends React.Component {
                                 </p>
                             </div>
                             <div className="col-md-4" style={{padding: '0', overflow: 'hidden'}}>
-                                <div id="1-img" className="img-card selected" style={{height: '300px', backgroundImage: 'url(' + dis + ')'}}></div>
+                                <div id="1-img" className="img-card selected" style={{height: '300px', backgroundImage: 'url(' + dis + ')', visibility: 'visible'}}></div>
                             </div>
                         </div>
                         <div className="closing-bar" style={{marginTop: '50px'}}></div>
