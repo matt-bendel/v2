@@ -52,6 +52,13 @@ class App extends React.Component{
                 <div className="App">
                     <TopNav></TopNav>
                     {/*<MainContent />*/}
+                    <footer>
+                        <div style={{margin: 'auto', width: '50%', height: '60px', textAlign: 'center'}}>
+                            <a href="https://github.com/matt-bendel" style={{textDecoration: 'none'}}>
+                                <p className="footer-p">Designed & Built by Matt Bendel</p>
+                            </a>
+                        </div>
+                    </footer>
                 </div>
             );
         }
@@ -63,7 +70,7 @@ class App extends React.Component{
                 <MainContent></MainContent>
                 <RightSide></RightSide>
                 <footer>
-                    <div style={{margin: 'auto', width: '25%', height: '60px', textAlign: 'center'}}>
+                    <div style={{margin: 'auto', width: '50%', height: '60px', textAlign: 'center'}}>
                         <a href="https://github.com/matt-bendel" style={{textDecoration: 'none'}}>
                             <p className="footer-p">Designed & Built by Matt Bendel</p>
                         </a>

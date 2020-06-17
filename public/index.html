@@ -88,9 +88,11 @@
         if (st > lastScrollTop && st > navbarHeight){
           // Scroll Down
           $('header').removeClass('header-down').addClass('header-up');
+          $('.bm-burger-button').css('top', '-60px');
         } else {
           // Scroll Up
           $('header').removeClass('header-up').addClass('header-down');
+          $('.bm-burger-button').css('top', '0');
         }
 
         lastScrollTop = st;

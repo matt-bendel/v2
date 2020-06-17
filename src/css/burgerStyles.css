@@ -8,6 +8,10 @@
     margin-top: 15px;
     margin-left: 10px;
     animation: SlideDown 2.5s ease;
+    -webkit-transition: top ease;
+    -moz-transition: top ease;
+    -o-transition: top ease;
+    transition: top ease;
 }
 
 /* Color/shape of burger icon bars */
