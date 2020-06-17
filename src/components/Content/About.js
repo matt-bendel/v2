@@ -92,8 +92,7 @@ class About extends React.Component {
                                     working on my personal projects, and playing video games. I love sports, especially
                                     football, and
                                     am a huge Browns fan. I also have a dog named Lulu who I am hoping will
-                                    one day be TikTok famous. You can see her, and some pictures that show some more about
-                                    me, on the right.
+                                    one day be TikTok famous. You can see her, and some pictures that show some more of who I am on the left.
                                 </p>
                             </div>
                         </div>
