@@ -49,8 +49,11 @@ class App extends React.Component{
 
         if (isMobile) {
             return(
-                <TopNav />
-            )
+                <div className="App">
+                    <TopNav></TopNav>
+                    {/*<MainContent />*/}
+                </div>
+            );
         }
 
         return (
