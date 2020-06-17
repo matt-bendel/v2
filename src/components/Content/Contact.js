@@ -35,7 +35,7 @@ class Contact extends React.Component {
             );
         }
         return(
-            <div id="contact" style={{visibility: 'hidden', paddingTop: '100px'}}>
+            <div id="contact" style={{visibility: 'hidden', paddingTop: '100px', paddingBottom: '100px'}}>
                 <div className="content-div" style={{marginTop: '50px'}}>
                     <div style={{height: '120px', width: '80%', margin: '0', marginLeft: '5px'}}>
                         <p className="page-title" style={{fontSize: '65px'}}>Reach Out</p>
