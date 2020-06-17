@@ -40,11 +40,7 @@ class About extends React.Component {
                                 </p>
                             </div>
                             <div className="col-md-4" style={{padding: '0', overflow: 'hidden'}}>
-                                <div className="center">
-                                    <div style={{height: '300px', margin: '0', marginTop: '15px', overflow: 'hidden'}}>
-                                        <div id="1-img" className="img-card selected" style={{height: '300px', backgroundImage: 'url(' + dis + ')'}}></div>
-                                    </div>
-                                </div>
+                                <div id="1-img" className="img-card selected" style={{height: '300px', backgroundImage: 'url(' + dis + ')'}}></div>
                             </div>
                         </div>
                         <div className="closing-bar" style={{marginTop: '50px'}}></div>
