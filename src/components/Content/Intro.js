@@ -46,14 +46,16 @@ class Intro extends React.Component {
                                     Here are some of the languages and tools I am proficient in:
                                 </p>
                             </div>
-                            <ul className="fancy" style={{fontSize: '15px'}}>
-                                <li><span>Python</span></li>
-                                <li><span>PHP</span></li>
-                                <li><span>Ruby</span></li>
-                                <li><span>HTML</span></li>
-                                <li><span>C#</span></li>
-                                <li><span>Unity</span></li>
-                            </ul>
+                            <div className="center">
+                                <ul className="fancy" style={{fontSize: '14px'}}>
+                                    <li><span>Python</span></li>
+                                    <li><span>PHP</span></li>
+                                    <li><span>Ruby</span></li>
+                                    <li><span>HTML</span></li>
+                                    <li><span>C#</span></li>
+                                    <li><span>Unity</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div className="closing-bar"></div>
