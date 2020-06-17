@@ -80,29 +80,31 @@ class About extends React.Component {
                             </div>
                         </div>
                         <div className="col-md-8" style={{color: 'darkgrey', fontSize: '16px'}}>
-                            <p>
-                                Originally majoring in
-                                Mathematics, I switched to Electrical and Computer Engineering my second year and
-                                haven't looked back.
-                                ECE has allowed me to gain a deeper understanding of how hardware and software interact
-                                with one another.
-                            </p>
-                            <p>
-                                Outside of the classroom a variety of experiences, both personal and professional, have
-                                helped
-                                sharpen my skills as a developer, and prepare me to perform at the highest level
-                                possible. You can
-                                see more about my experiences in the Work and Personal experience sections below.
-                            </p>
-                            <p>
-                                When not studying for school or working, I enjoy spending time with my family, hanging
-                                out with my friends,
-                                working on my personal projects, and playing video games. I love sports, especially
-                                football, and
-                                am a huge Browns fan. I also have a dog named Lulu who I am hoping will
-                                one day be TikTok famous. You can see her, and some pictures that show some more about
-                                me, on the right.
-                            </p>
+                            <div style={{marginLeft: '20px'}}>
+                                <p>
+                                    Originally majoring in
+                                    Mathematics, I switched to Electrical and Computer Engineering my second year and
+                                    haven't looked back.
+                                    ECE has allowed me to gain a deeper understanding of how hardware and software interact
+                                    with one another.
+                                </p>
+                                <p>
+                                    Outside of the classroom a variety of experiences, both personal and professional, have
+                                    helped
+                                    sharpen my skills as a developer, and prepare me to perform at the highest level
+                                    possible. You can
+                                    see more about my experiences in the Work and Personal experience sections below.
+                                </p>
+                                <p>
+                                    When not studying for school or working, I enjoy spending time with my family, hanging
+                                    out with my friends,
+                                    working on my personal projects, and playing video games. I love sports, especially
+                                    football, and
+                                    am a huge Browns fan. I also have a dog named Lulu who I am hoping will
+                                    one day be TikTok famous. You can see her, and some pictures that show some more about
+                                    me, on the right.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div className="closing-bar" style={{marginTop: '50px'}}></div>

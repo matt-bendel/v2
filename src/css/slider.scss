@@ -1,5 +1,6 @@
 @import "~react-awesome-slider/src/core/styles.scss";
 .#{$root-element} {
+    z-index: 0;
     --slider-height-percentage: 60%;
     --slider-transition-duration: 700ms;
     --organic-arrow-thickness: 4px;
@@ -14,6 +15,16 @@
     --loader-bar-color: darkseagreen;
     --loader-bar-height: 0px;
     --scale-out-scale: 0.85;
+
+    &__wrapper {
+        overflow: hidden;
+        margin-left: 20px;
+        z-index: 1;
+    }
+
+    &__active{
+        visibility: inherit;
+    }
 
     //&--exit {
     //    &.#{$root-element}--moveRight,
