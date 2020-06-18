@@ -46,7 +46,7 @@ class Intro extends React.Component {
                                 </p>
                             </div>
                             <div className="center">
-                                <ul className="fancy" style={{fontSize: '14px', marginRight: '5px'}}>
+                                <ul className="fancy" style={{fontSize: '16px', marginRight: '8px'}}>
                                     <li style={{marginBottom: '10px'}}><span>Python</span></li>
                                     <li style={{marginBottom: '10px'}}><span>PHP</span></li>
                                     <li><span>Ruby</span></li>
