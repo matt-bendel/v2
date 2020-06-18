@@ -21,7 +21,9 @@ class MainContent extends React.Component {
                         <Intro></Intro>
                     </Fade>
                     <div className="spacer"></div>
-                    <About></About>
+                    <Fade bottom>
+                        <About></About>
+                    </Fade>
                     <div className="spacer"></div>
                     <Contact></Contact>
                     <div className="spacer"></div>
@@ -46,7 +48,7 @@ class MainContent extends React.Component {
                 <PP></PP>
                 <div className="spacer"></div>
                 <Contact></Contact>
-                <div className="spacer"></div>
+                <div className="spacer" style={{height: '100px'}}></div>
             </div>
         );
     }

@@ -40,7 +40,7 @@ class About extends React.Component {
                                 </p>
                             </div>
                             <div className="col-md-4" style={{padding: '0', marginTop: '20px', height: '400px'}}>
-                                <div id="1-img" className="img-card selected" style={{height: '300px', position: 'relative', backgroundImage: 'url(' + dis + ')', backgroundPosition: 'center'}}></div>
+                                <div id="1-img" className="img-card selected" style={{height: '300px', position: 'relative', backgroundImage: 'url(' + dis + ')', backgroundPosition: 'center', visibility: 'visible'}}></div>
                             </div>
                         </div>
                         <div className="closing-bar" style={{marginTop: '50px'}}></div>
@@ -49,7 +49,7 @@ class About extends React.Component {
             );
         }
         return(
-            <div id="about" style={{visibility: 'hidden', marginTop: '100px', display: 'none'}}>
+            <div id="about" style={{visibility: 'visible', marginTop: '100px', display: 'block'}}>
                 <div className="content-div" style={{marginTop: '50px'}}>
                     <div style={{height: '120px', width: '80%', margin: '0', marginLeft: '5px', marginBottom: '3%'}}>
                         <p className="page-title" style={{fontSize: '65px'}}>About</p>
