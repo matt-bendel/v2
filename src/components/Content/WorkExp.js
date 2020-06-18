@@ -70,14 +70,13 @@ class WorkExp extends React.Component {
     }
 
     getExp() {
-        // if (isMobile) {
-            // TODO: This needs big time work for mobile
+        if (isMobile) {
             return(
-                <div id="work-exp" style={{visibility: 'hidden', paddingTop: '40px'}}>
+                <div id="work-exp" style={{visibility: 'hidden', paddingTop: '100px'}}>
                     <div className="content-div-mobile" style={{marginTop: '50px'}}>
                         <p className="page-title" style={{fontSize: '40px'}}>Work Experience</p>
-                        <div className="row" style={{height: '200px'}}>
-                            <div className="col-md-4 center" style={{padding: '0', display: 'inline-block'}}>
+                        <div className="row">
+                            <div className="col-md-4 center" style={{paddingRight: '0'}}>
                                 <ul className="work-list-mobile" style={{color: 'ghostwhite', alignSelf: 'center', textAlign: 'center'}}>
                                     <li style={{margin: '0'}}>
                                         <button style={this.state.blubrry ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
@@ -86,7 +85,7 @@ class WorkExp extends React.Component {
                                     </li>
                                     <li>
                                         <button style={this.state.te ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="te-label" onClick={this.handleClick('te')}>
-                                            TE Software
+                                            TE
                                         </button>
                                     </li>
                                     <li>
@@ -101,111 +100,115 @@ class WorkExp extends React.Component {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-md-8" style={{overflow: 'hidden'}}>
+                            <div className="col-md-8" style={{padding: '0', overflow: 'hidden'}}>
                                 <Bounce left opposite when={this.state.blubrry}>
                                     <div id="blubrry-info" className="work-info" style={{visibility: 'hidden'}}>
-                                        <div className="work-info-top" style={{fontSize: '14px'}}>
+                                        <div className="work-info-top-mobile">
                                             <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
                                                 Software Developer Intern
                                             </p>
-                                            <p style={{marginBottom: '5px'}}>
+                                            <p style={{margin: '0'}}>
                                                 <a href="https://blubrry.com/" target="_blank" className="company-link"> Blubrry
                                                     Podcasting</a>
                                             </p>
+                                        </div>
+                                        <div>
                                             <p style={{color: 'darkgrey', fontFamily: 'Courier New', fontSize: '14px'}}>May 2020 - August 2020</p>
                                         </div>
-                                        <div style={{display: 'inline-block'}}>
-                                            <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '12px'}}>
-                                                <li><span>Created a new page to serve private RSS feeds to validated users using basic http authentication</span>
-                                                </li>
-                                                <li><span>Helped overhaul Blubrry's publisher system with new designs, and implemented a new onboarding process for users</span>
-                                                </li>
-                                                <li>
-                                                    <span>Wrote use cases for the Blubrry API in Python, Ruby, PHP, Node.js, and C#</span>
-                                                </li>
-                                                <li><span>Used PHP, MYSQL, ES6, CSS, and WAMP</span></li>
-                                            </ul>
-                                        </div>
+                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '12px'}}>
+                                            <li><span>Created a new page to serve private RSS feeds to validated users using basic http authentication</span>
+                                            </li>
+                                            <li><span>Helped overhaul Blubrry's publisher system with new designs, and implemented a new onboarding process for users</span>
+                                            </li>
+                                            <li>
+                                                <span>Wrote use cases for the Blubrry API in Python, Ruby, PHP, Node.js, and C#</span>
+                                            </li>
+                                            <li><span>Used PHP, MYSQL, ES6, CSS, and WAMP</span></li>
+                                        </ul>
                                     </div>
                                 </Bounce>
                                 <Bounce left opposite when={this.state.te}>
                                     <div id="te-info" className="work-info">
-                                        <div className="work-info-top" style={{fontSize: '14px'}}>
+                                        <div className="work-info-top-mobile">
                                             <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
                                                 Software Developer Intern
                                             </p>
-                                            <p style={{marginBottom: '5px'}}>
+                                            <p style={{margin: '0'}}>
                                                 <a href="https://www.topechelon.com/" target="_blank" className="company-link"> Top
                                                     Echelon Software</a>
                                             </p>
-                                            <p style={{color: 'darkgrey', fontFamily: 'Courier New'}}>May 2019 - August 2019</p>
                                         </div>
-                                        {/*<ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '15px'}}>*/}
-                                        {/*    <li><span>Worked as a full-stack developer on a variety of problems ranging from bug fixes to implementing new features</span>*/}
-                                        {/*    </li>*/}
-                                        {/*    <li><span>Worked closely with the team using Agile to develop and plan a new profile feature for recruiters and agencies in the TE Network</span>*/}
-                                        {/*    </li>*/}
-                                        {/*    <li><span>Built endpoints and front-end views for the new version of profiles for recruiters in the TE network</span>*/}
-                                        {/*    </li>*/}
-                                        {/*    <li><span>Mostly used Ruby on Rails, PostgreSQL, and AngularJS</span></li>*/}
-                                        {/*</ul>*/}
+                                        <div>
+                                            <p style={{color: 'darkgrey', fontFamily: 'Courier New', fontSize: '14px'}}>May 2019 - August 2019</p>
+                                        </div>
+                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '12px'}}>
+                                            <li><span>Worked as a full-stack developer on a variety of problems ranging from bug fixes to implementing new features</span>
+                                            </li>
+                                            <li><span>Worked closely with the team using Agile to develop and plan a new profile feature for recruiters and agencies in the TE Network</span>
+                                            </li>
+                                            <li><span>Built endpoints and front-end views for the new version of profiles for recruiters in the TE network</span>
+                                            </li>
+                                            <li><span>Mostly used Ruby on Rails, PostgreSQL, and AngularJS</span></li>
+                                        </ul>
                                     </div>
                                 </Bounce>
                                 <Bounce left opposite when={this.state.esl}>
                                     <div id="esl-info" className="work-info">
-                                        <div className="work-info-top" style={{fontSize: '14px'}}>
+                                        <div className="work-info-top-mobile">
                                             <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
                                                 Student Researcher
                                             </p>
-                                            <p style={{marginBottom: '5px'}}>
+                                            <p style={{margin: '0'}}>
                                                 <a href="https://electroscience.osu.edu/about" target="_blank"
                                                    className="company-link"> OSU ElectroScience Lab</a>
                                             </p>
-                                            <p style={{color: 'darkgrey', fontFamily: 'Courier New'}}>Jan 2020 - Present</p>
                                         </div>
-                                        {/*<ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '15px'}}>*/}
-                                        {/*    <li><span>Working as a student researcher, developing the technology tools we will be using to study EEG signals in young people with concussions</span>*/}
-                                        {/*    </li>*/}
-                                        {/*    <li><span>Built an app using the Unity game engine that interfaces with an EEG headset and collects raw data</span>*/}
-                                        {/*    </li>*/}
-                                        {/*    <li><span>Built a web server using Python to store the data in a PostgreSQL database via a POST from the Unity app</span>*/}
-                                        {/*    </li>*/}
-                                        {/*    <li><span>Used Python, Django, and PostgreSQL</span></li>*/}
-                                        {/*</ul>*/}
+                                        <div>
+                                            <p style={{color: 'darkgrey', fontFamily: 'Courier New', fontSize: '14px'}}>Jan 2020 - Present</p>
+                                        </div>
+                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '12px'}}>
+                                            <li><span>Working as a student researcher, developing the technology tools we will be using to study EEG signals in young people with concussions</span>
+                                            </li>
+                                            <li><span>Built an app using the Unity game engine that interfaces with an EEG headset and collects raw data</span>
+                                            </li>
+                                            <li><span>Built a web server using Python to store the data in a PostgreSQL database via a POST from the Unity app</span>
+                                            </li>
+                                            <li><span>Used Python, Django, and PostgreSQL</span></li>
+                                        </ul>
                                     </div>
                                 </Bounce>
-                                <div style={{overflow: 'hidden', height: '80%'}}>
-                                    <Bounce left opposite when={this.state.dsl}>
-                                        <div id="dsl-info" className="work-info">
-                                            <div className="work-info-top" style={{fontSize: '14px'}}>
-                                                <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
-                                                    Student Engineer
-                                                </p>
-                                                <p style={{marginBottom: '5px'}}>
-                                                    <a href="http://drivesim.osu.edu/" target="_blank" className="company-link"> OSU
-                                                        Driving Simulation Lab</a>
-                                                </p>
-                                                <p style={{color: 'darkgrey', fontFamily: 'Courier New'}}>Jan 2020 - Present</p>
-                                            </div>
-                                            {/*<ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '15px', overflow: 'hidden'}}>*/}
-                                            {/*    <li><span>Working as a student software engineer, developing simulation scenarios using SimCreater</span>*/}
-                                            {/*    </li>*/}
-                                            {/*    <li><span>Working with clients to develop to their specific technical needs</span>*/}
-                                            {/*    </li>*/}
-                                            {/*    <li><span>Regularly solving problems with equipment unique to the lab</span>*/}
-                                            {/*    </li>*/}
-                                            {/*    <li><span>Primarily using JavaScript</span></li>*/}
-                                            {/*</ul>*/}
+                                <Bounce left opposite when={this.state.dsl}>
+                                    <div id="dsl-info" className="work-info" style={{overflow: 'hidden'}}>
+                                        <div className="work-info-top-mobile">
+                                            <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
+                                                Student Engineer -
+                                            </p>
+                                            <p style={{margin: '0'}}>
+                                                <a href="http://drivesim.osu.edu/" target="_blank" className="company-link"> OSU
+                                                    Driving Simulation Lab</a>
+                                            </p>
                                         </div>
-                                    </Bounce>
-                                </div>
+                                        <div>
+                                            <p style={{color: 'darkgrey', fontFamily: 'Courier New', fontSize: '14px'}}>Jan 2020 - Present</p>
+                                        </div>
+                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '12px', overflow: 'hidden'}}>
+                                            <li><span>Working as a student software engineer, developing simulation scenarios using SimCreater</span>
+                                            </li>
+                                            <li><span>Working with clients to develop to their specific technical needs</span>
+                                            </li>
+                                            <li><span>Regularly solving problems with equipment unique to the lab</span>
+                                            </li>
+                                            <li><span>Primarily using JavaScript</span></li>
+                                        </ul>
+                                    </div>
+                                </Bounce>
                             </div>
                         </div>
                         <div className="closing-bar"></div>
                     </div>
                 </div>
             );
-        // }
+        }
         return(
             <div id="work-exp" style={{visibility: 'hidden', paddingTop: '100px'}}>
                 <div className="content-div" style={{marginTop: '50px'}}>
