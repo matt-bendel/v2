@@ -593,6 +593,7 @@ ul li.social-container-list:hover{
 
 .work-list-mobile li {
     color: darkgrey;
+    margin-left: 3px;
     font-family: "Courier New";
     float: left;
 }
