@@ -70,14 +70,14 @@ class WorkExp extends React.Component {
     }
 
     getExp() {
-        if (isMobile) {
+        // if (isMobile) {
             return(
                 <div id="work-exp" style={{visibility: 'hidden', paddingTop: '100px'}}>
                     <div className="content-div-mobile" style={{marginTop: '50px'}}>
                         <p className="page-title" style={{fontSize: '40px'}}>Work Experience</p>
-                        <div className="row">
-                            <div className="col-md-4 center" style={{paddingRight: '0'}}>
-                                <ul className="work-list-mobile" style={{color: 'ghostwhite', alignSelf: 'center', textAlign: 'center'}}>
+                        <div className="row" style={{minHeight: '300px'}}>
+                            <div className="col-md-4">
+                                <ul className="work-list-mobile" style={{color: 'ghostwhite'}}>
                                     <li style={{margin: '0'}}>
                                         <button style={this.state.blubrry ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
                                             Blubrry
@@ -100,7 +100,7 @@ class WorkExp extends React.Component {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-md-8" style={{padding: '0', overflow: 'hidden'}}>
+                            <div className="col-md-8">
                                 <Bounce left opposite when={this.state.blubrry}>
                                     <div id="blubrry-info" className="work-info" style={{visibility: 'hidden'}}>
                                         <div className="work-info-top-mobile">
@@ -208,7 +208,7 @@ class WorkExp extends React.Component {
                     </div>
                 </div>
             );
-        }
+        // }
         return(
             <div id="work-exp" style={{visibility: 'hidden', paddingTop: '100px'}}>
                 <div className="content-div" style={{marginTop: '50px'}}>
