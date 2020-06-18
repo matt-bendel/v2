@@ -12,7 +12,7 @@ class About extends React.Component {
     getAbout () {
         if (isMobile) {
             return(
-                <div id="about" style={{margintTop: '40px'}}>
+                <div id="about-m" style={{margintTop: '40px', display: 'block', visibility: 'hidden'}}>
                     <div className="content-div-mobile" style={{overflow: 'auto'}}>
                         <p className="page-title" style={{fontSize: '40px', marginBottom: '3%'}}>About</p>
                         <div className="row">
@@ -39,8 +39,8 @@ class About extends React.Component {
                                     am a huge Browns fan.
                                 </p>
                             </div>
-                            <div className="col-md-4" style={{padding: '0', marginTop: '20px', height: '400px'}}>
-                                <div id="1-img" className="img-card selected" style={{height: '350px', position: 'relative', backgroundImage: 'url(' + dis + ')', backgroundPosition: 'center',}}></div>
+                            <div className="col-md-4" style={{padding: '0', marginTop: '20px', height: '300x'}}>
+                                <div id="1-img" className="img-card" style={{height: '300px', position: 'relative', backgroundImage: 'url(' + chewie + ')', backgroundPosition: 'center'}}></div>
                             </div>
                         </div>
                         <div className="closing-bar" style={{marginTop: '50px'}}></div>
@@ -49,14 +49,14 @@ class About extends React.Component {
             );
         }
         return(
-            <div id="about" style={{marginTop: '100px', display: 'block'}}>
+            <div id="about" style={{marginTop: '100px', display: 'block', visibility: 'visible'}}>
                 <div className="content-div" style={{marginTop: '50px'}}>
                     <div style={{height: '120px', width: '80%', margin: '0', marginLeft: '5px', marginBottom: '3%'}}>
                         <p className="page-title" style={{fontSize: '65px'}}>About</p>
                     </div>
                     <div className="row" style={{height: '500px'}}>
                         <div className="col-md-4" style={{padding: '0'}}>
-                            <div style={{margin: '0', height: '350px', marginTop: '15px', bottom: '0'}}>
+                            <div style={{margin: '0', marginTop: '15px', bottom: '0'}}>
                                 <AwesomeSlider fillParent={true} cssModule={AwesomeSliderStyles}>
                                     <div data-src={dis}/>
                                     <div data-src={fam}/>

@@ -27,7 +27,7 @@ body {
 
 .img-card {
     display: inline-block;
-    width: 100%;
+    width: 90%;
     background-size: cover;
     top: 0;
     background-repeat: no-repeat;
