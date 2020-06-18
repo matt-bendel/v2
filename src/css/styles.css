@@ -586,6 +586,7 @@ ul li.social-container-list:hover{
 .work-list-mobile {
     list-style-type: none;
     color: darkseagreen;
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -606,13 +607,13 @@ ul li.social-container-list:hover{
 }
 
 .work-list-mobile li button.selected {
-    animation: colorBorder 0.75s;
+    animation: colorBorderMobile 0.75s;
     border-top-color: darkseagreen;
     color: darkseagreen;
 }
 
 .work-button-selected-mobile {
-    animation: colorBorder 0.75s;
+    animation: colorBorderMobile 0.75s;
     border-top-color: darkseagreen;
     color: darkseagreen;
 }

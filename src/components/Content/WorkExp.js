@@ -70,43 +70,41 @@ class WorkExp extends React.Component {
     }
 
     getExp() {
-        if (isMobile) {
+        // if (isMobile) {
             // TODO: This needs big time work for mobile
             return(
                 <div id="work-exp" style={{visibility: 'hidden', paddingTop: '40px'}}>
                     <div className="content-div-mobile" style={{marginTop: '50px'}}>
                         <p className="page-title" style={{fontSize: '40px'}}>Work Experience</p>
                         <div className="row">
-                        </div>
-                        <div className="row">
-                            <div className="col-md-4" style={{paddingRight: '0'}}>
+                            <div className="col-md-4" style={{padding: '0'}}>
                                 <ul className="work-list-mobile" style={{color: 'ghostwhite'}}>
                                     <li style={{margin: '0'}}>
-                                        <button className={this.state.blubrry ? 'work-button-selected-mobile' : ''} style={this.state.blubrry ? {color: 'darkseagreen', borderLeftColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
+                                        <button className={this.state.blubrry ? 'work-button-selected-mobile' : ''} style={this.state.blubrry ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
                                             Blubrry
                                         </button>
                                     </li>
                                     <li>
-                                        <button className={this.state.te ? 'work-button-selected-mobile' : ''} style={this.state.te ? {color: 'darkseagreen', borderLeftColor: 'darkseagreen'} : {}} id="te-label" onClick={this.handleClick('te')}>
+                                        <button className={this.state.te ? 'work-button-selected-mobile' : ''} style={this.state.te ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="te-label" onClick={this.handleClick('te')}>
                                             Top Echelon
                                         </button>
                                     </li>
                                     <li>
-                                        <button className={this.state.esl ? 'work-button-selected-mobile' : ''} style={this.state.esl ? {color: 'darkseagreen', borderLeftColor: 'darkseagreen'} : {}} id="esl-label" onClick={this.handleClick('esl')}>
-                                            OSU ESL
+                                        <button className={this.state.esl ? 'work-button-selected-mobile' : ''} style={this.state.esl ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="esl-label" onClick={this.handleClick('esl')}>
+                                            ESL
                                         </button>
                                     </li>
                                     <li>
-                                        <button className={this.state.dsl ? 'work-button-selected-mobile' : ''} style={this.state.dsl ? {color: 'darkseagreen', borderLeftColor: 'darkseagreen'} : {}} id="dsl-label" onClick={this.handleClick('dsl')}>
-                                            OSU DSL
+                                        <button className={this.state.dsl ? 'work-button-selected-mobile' : ''} style={this.state.dsl ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="dsl-label" onClick={this.handleClick('dsl')}>
+                                            DSL
                                         </button>
                                     </li>
                                 </ul>
                             </div>
                             <div className="col-md-8" style={{padding: '0', overflow: 'hidden'}}>
-                                <Bounce top opposite when={this.state.blubrry}>
+                                <Bounce left opposite when={this.state.blubrry}>
                                     <div id="blubrry-info" className="work-info" style={{visibility: 'hidden'}}>
-                                        <div className="work-info-top">
+                                        <div className="work-info-top" style={{fontSize: '15px'}}>
                                             <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
                                                 Software Developer Intern -
                                             </p>
@@ -114,7 +112,7 @@ class WorkExp extends React.Component {
                                                 Podcasting</a>
                                         </div>
                                         <div>
-                                            <p style={{color: 'darkgrey', fontFamily: 'Courier New'}}>May 2020 - August 2020</p>
+                                            <p style={{color: 'darkgrey', fontFamily: 'Courier New', fontSize: '14px'}}>May 2020 - August 2020</p>
                                         </div>
                                         {/*<ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '15px'}}>*/}
                                         {/*    <li><span>Created a new page to serve private RSS feeds to validated users using basic http authentication</span>*/}
@@ -128,7 +126,7 @@ class WorkExp extends React.Component {
                                         {/*</ul>*/}
                                     </div>
                                 </Bounce>
-                                <Bounce top opposite when={this.state.te}>
+                                <Bounce left opposite when={this.state.te}>
                                     <div id="te-info" className="work-info">
                                         <div className="work-info-top">
                                             <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
@@ -151,7 +149,7 @@ class WorkExp extends React.Component {
                                         {/*</ul>*/}
                                     </div>
                                 </Bounce>
-                                <Bounce top opposite when={this.state.esl}>
+                                <Bounce left opposite when={this.state.esl}>
                                     <div id="esl-info" className="work-info">
                                         <div className="work-info-top">
                                             <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
@@ -175,7 +173,7 @@ class WorkExp extends React.Component {
                                     </div>
                                 </Bounce>
                                 <div style={{overflow: 'hidden', height: '80%'}}>
-                                    <Bounce top opposite when={this.state.dsl}>
+                                    <Bounce left opposite when={this.state.dsl}>
                                         <div id="dsl-info" className="work-info" style={{overflow: 'hidden'}}>
                                             <div className="work-info-top">
                                                 <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
@@ -205,7 +203,7 @@ class WorkExp extends React.Component {
                     </div>
                 </div>
             );
-        }
+        // }
         return(
             <div id="work-exp" style={{visibility: 'hidden', paddingTop: '100px'}}>
                 <div className="content-div" style={{marginTop: '50px'}}>
