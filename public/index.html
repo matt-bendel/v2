@@ -37,10 +37,8 @@
     <script>
       $(document).ready(function () {
         $(document).on('scroll', function() {
-          if($(window).scrollTop() + 200>=$('#about').position().top){
-            $('#about-m').css('visibility', 'visible');
-            $('#about-m').css('display', '');
-            $('#about-m').css('animation', 'SlideUpSlower 1s');
+          if($(window).scrollTop() + 200>=$('#about-m').position().top){
+            $('#about-m').css('visibility', 'visible').css('animation', 'SlideUpSlower 1s');
           }
           if($(window).scrollTop() + 200>=$('#work-exp').position().top){
             $('#work-exp').css('visibility', 'visible');
