@@ -76,8 +76,8 @@ class WorkExp extends React.Component {
                 <div id="work-exp" style={{visibility: 'hidden', paddingTop: '40px'}}>
                     <div className="content-div-mobile" style={{marginTop: '50px'}}>
                         <p className="page-title" style={{fontSize: '40px'}}>Work Experience</p>
-                        <div className="row">
-                            <div className="col-md-4 center" style={{padding: '0'}}>
+                        <div className="row" style={{height: '200px'}}>
+                            <div className="col-md-4 center" style={{padding: '0', display: 'inline-block'}}>
                                 <ul className="work-list-mobile" style={{color: 'ghostwhite', alignSelf: 'center', textAlign: 'center'}}>
                                     <li style={{margin: '0'}}>
                                         <button style={this.state.blubrry ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
@@ -101,7 +101,7 @@ class WorkExp extends React.Component {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-md-8" style={{padding: '0', width: '90%'}}>
+                            <div className="col-md-8" style={{overflow: 'hidden'}}>
                                 <Bounce left opposite when={this.state.blubrry}>
                                     <div id="blubrry-info" className="work-info" style={{visibility: 'hidden'}}>
                                         <div className="work-info-top" style={{fontSize: '14px'}}>
@@ -114,16 +114,18 @@ class WorkExp extends React.Component {
                                             </p>
                                             <p style={{color: 'darkgrey', fontFamily: 'Courier New', fontSize: '14px'}}>May 2020 - August 2020</p>
                                         </div>
-                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '12px'}}>
-                                            <li><span>Created a new page to serve private RSS feeds to validated users using basic http authentication</span>
-                                            </li>
-                                            <li><span>Helped overhaul Blubrry's publisher system with new designs, and implemented a new onboarding process for users</span>
-                                            </li>
-                                            <li>
-                                                <span>Wrote use cases for the Blubrry API in Python, Ruby, PHP, Node.js, and C#</span>
-                                            </li>
-                                            <li><span>Used PHP, MYSQL, ES6, CSS, and WAMP</span></li>
-                                        </ul>
+                                        <div style={{display: 'inline-block'}}>
+                                            <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '12px'}}>
+                                                <li><span>Created a new page to serve private RSS feeds to validated users using basic http authentication</span>
+                                                </li>
+                                                <li><span>Helped overhaul Blubrry's publisher system with new designs, and implemented a new onboarding process for users</span>
+                                                </li>
+                                                <li>
+                                                    <span>Wrote use cases for the Blubrry API in Python, Ruby, PHP, Node.js, and C#</span>
+                                                </li>
+                                                <li><span>Used PHP, MYSQL, ES6, CSS, and WAMP</span></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </Bounce>
                                 <Bounce left opposite when={this.state.te}>
