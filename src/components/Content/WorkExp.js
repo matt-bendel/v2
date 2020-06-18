@@ -76,7 +76,7 @@ class WorkExp extends React.Component {
                     <div className="content-div-mobile" style={{marginTop: '50px'}}>
                         <p className="page-title" style={{fontSize: '40px'}}>Work Experience</p>
                         <div className="row" style={{minHeight: '300px'}}>
-                            <div className="col-md-4">
+                            <div className="col-md-4" style={{height: '40px'}}>
                                 <ul className="work-list-mobile" style={{color: 'ghostwhite'}}>
                                     <li style={{margin: '0'}}>
                                         <button style={this.state.blubrry ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
