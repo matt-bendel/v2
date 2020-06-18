@@ -80,33 +80,33 @@ class WorkExp extends React.Component {
                             <div className="col-md-4" style={{padding: '0'}}>
                                 <ul className="work-list-mobile" style={{color: 'ghostwhite'}}>
                                     <li style={{margin: '0'}}>
-                                        <button className={this.state.blubrry ? 'work-button-selected-mobile' : ''} style={this.state.blubrry ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
+                                        <button style={this.state.blubrry ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
                                             Blubrry
                                         </button>
                                     </li>
                                     <li>
-                                        <button className={this.state.te ? 'work-button-selected-mobile' : ''} style={this.state.te ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="te-label" onClick={this.handleClick('te')}>
+                                        <button style={this.state.te ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="te-label" onClick={this.handleClick('te')}>
                                             Top Echelon
                                         </button>
                                     </li>
                                     <li>
-                                        <button className={this.state.esl ? 'work-button-selected-mobile' : ''} style={this.state.esl ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="esl-label" onClick={this.handleClick('esl')}>
+                                        <button style={this.state.esl ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="esl-label" onClick={this.handleClick('esl')}>
                                             ESL
                                         </button>
                                     </li>
                                     <li>
-                                        <button className={this.state.dsl ? 'work-button-selected-mobile' : ''} style={this.state.dsl ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="dsl-label" onClick={this.handleClick('dsl')}>
+                                        <button style={this.state.dsl ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="dsl-label" onClick={this.handleClick('dsl')}>
                                             DSL
                                         </button>
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-md-8" style={{padding: '0', overflow: 'hidden'}}>
+                            <div className="col-md-8" style={{padding: '0'}}>
                                 <Bounce left opposite when={this.state.blubrry}>
                                     <div id="blubrry-info" className="work-info" style={{visibility: 'hidden'}}>
                                         <div className="work-info-top" style={{fontSize: '15px'}}>
                                             <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
-                                                Software Developer Intern -
+                                                Software Developer Intern-
                                             </p>
                                             <a href="https://blubrry.com/" target="_blank" className="company-link"> Blubrry
                                                 Podcasting</a>
@@ -130,7 +130,7 @@ class WorkExp extends React.Component {
                                     <div id="te-info" className="work-info">
                                         <div className="work-info-top">
                                             <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
-                                                Software Developer Intern -
+                                                Software Developer Intern-
                                             </p>
                                             <a href="https://www.topechelon.com/" target="_blank" className="company-link"> Top
                                                 Echelon Software</a>
@@ -153,7 +153,7 @@ class WorkExp extends React.Component {
                                     <div id="esl-info" className="work-info">
                                         <div className="work-info-top">
                                             <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
-                                                Student Researcher -
+                                                Student Researcher-
                                             </p>
                                             <a href="https://electroscience.osu.edu/about" target="_blank"
                                                className="company-link"> OSU ElectroScience Lab</a>
@@ -177,7 +177,7 @@ class WorkExp extends React.Component {
                                         <div id="dsl-info" className="work-info" style={{overflow: 'hidden'}}>
                                             <div className="work-info-top">
                                                 <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
-                                                    Student Engineer -
+                                                    Student Engineer-
                                                 </p>
                                                 <a href="http://drivesim.osu.edu/" target="_blank" className="company-link"> OSU
                                                     Driving Simulation Lab</a>
