@@ -69,8 +69,8 @@ class Intro extends React.Component {
                 <div className="row">
                     <div className="col-md-4">
                         {/*TODO: Add Images*/}
-                        <div className="img-card" style={{height: '300px', position: 'relative', visibility: 'visible', backgroundImage: 'url(' + matt + ')'}}></div>
                         <div className="center">
+                            <div className="img-card" style={{height: '300px', position: 'relative', visibility: 'visible', backgroundImage: 'url(' + matt + ')', alignSelf: 'center'}}></div>
                             <a href={this.getEmail()} target="_blank" style={{textDecoration: 'none'}}>
                                 <div className="btn">Reach Out</div>
                             </a>
