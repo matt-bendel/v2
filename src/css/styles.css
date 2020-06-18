@@ -27,10 +27,8 @@ body {
 
 .img-card {
     display: inline-block;
-    width: 90%;
+    width: 100%;
     background-size: cover;
-    position: absolute;
-    visibility: hidden;
     top: 0;
     background-repeat: no-repeat;
     cursor: pointer;
