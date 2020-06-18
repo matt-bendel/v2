@@ -19,8 +19,8 @@ class Intro extends React.Component {
                     <p className="page-title" style={{fontSize: '40px', animation: 'none', marginBottom: '3%'}}>Matt Bendel</p>
                     <div className="row">
                         <div className="col-md-4" style={{marginBottom: '30px'}}>
-                            <div className="img-card" style={{height: '300px', position: 'relative', visibility: 'visible', backgroundImage: 'url(' + matt + ')', backgroundPosition: 'center'}}></div>
                             <div className="center">
+                                <div className="img-card" style={{height: '300px', position: 'relative', visibility: 'visible', backgroundImage: 'url(' + matt + ')', backgroundPosition: 'center', alignSelf: 'center'}}></div>
                                 <a href={this.getEmail()} target="_blank" style={{textDecoration: 'none'}}>
                                     <div className="btn">Reach Out</div>
                                 </a>

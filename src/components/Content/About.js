@@ -71,17 +71,14 @@ class About extends React.Component {
                                 </p>
                                 <p>
                                     Outside of the classroom a variety of experiences, both personal and professional, have
-                                    helped
-                                    sharpen my skills as a developer, and prepare me to perform at the highest level
-                                    possible. You can
-                                    see more about my experiences in the Work and Personal experience sections below.
+                                    helped sharpen my skills as a developer, and prepare me to perform at the highest level
+                                    possible. You can see more about my experiences in the Work and Personal experience sections below.
                                 </p>
                                 <p>
                                     When not studying for school or working, I enjoy spending time with my family, hanging
-                                    out with my friends,
-                                    working on my personal projects, and playing video games. I love sports, especially
+                                    out with my friends, working on my personal projects, and playing video games. I love sports, especially
                                     football, and am a huge Browns fan. I also have a dog named Lulu who I am hoping will
-                                    one day be TikTok famous. You can see her, and some pictures that show some more of who I am on the left.
+                                    one day be TikTok famous. You can see her, and some pictures that show some more of who I am, on the left.
                                 </p>
                             </div>
                         </div>
