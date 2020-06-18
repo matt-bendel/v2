@@ -70,7 +70,7 @@ class WorkExp extends React.Component {
     }
 
     getExp() {
-        // if (isMobile) {
+        if (isMobile) {
             return(
                 <div id="work-exp" style={{visibility: 'hidden', paddingTop: '100px'}}>
                     <div className="content-div-mobile" style={{marginTop: '50px'}}>
@@ -201,15 +201,12 @@ class WorkExp extends React.Component {
                                     </div>
                                 </Bounce>
                             </div>
-                            {/*<div className="col-md-8" style={{display: 'inline-block'}}>*/}
-                            {/*    */}
-                            {/*</div>*/}
                         </div>
                         <div className="closing-bar"></div>
                     </div>
                 </div>
             );
-        // }
+        }
         return(
             <div id="work-exp" style={{visibility: 'hidden', paddingTop: '100px'}}>
                 <div className="content-div" style={{marginTop: '50px'}}>
