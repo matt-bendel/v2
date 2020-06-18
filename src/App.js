@@ -64,6 +64,7 @@ class App extends React.Component{
                 <MainContent></MainContent>
                 <RightSide></RightSide>
                 <footer>
+                    <div id="about-m" style={{margin: '0', height: '0', width: '0'}}></div>
                     <div style={{margin: 'auto', width: '50%', height: '60px', textAlign: 'center'}}>
                         <a href="https://github.com/matt-bendel" style={{textDecoration: 'none'}}>
                             <p className="footer-p">Designed & Built by Matt Bendel</p>

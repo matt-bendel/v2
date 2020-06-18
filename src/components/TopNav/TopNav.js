@@ -31,7 +31,7 @@ class TopNav extends React.Component {
                 <header className="header-down">
                     <div className="container-left">
                         <Menu style={burgerStyle} isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)}>
-                            <a id="about-li" className="mobileMenu" onClick={() => this.closeMenu()} href="#about">About</a>
+                            <a id="about-li" className="mobileMenu" onClick={() => this.closeMenu()} href="#about-m">About</a>
                             <a id="work-exp-li" className="mobileMenu" onClick={() => this.closeMenu()} href="#work-exp">Work Experience</a>
                             <a id="personal-projects-li" className="mobileMenu" onClick={() => this.closeMenu()} href="#personal-projects">My Projects</a>
                             <a id="contact-li" className="mobileMenu" onClick={() => this.closeMenu()} href="#contact">Contact</a>
