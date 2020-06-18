@@ -179,7 +179,7 @@ class WorkExp extends React.Component {
                                     <div id="dsl-info" className="work-info" style={{overflow: 'hidden'}}>
                                         <div className="work-info-top-mobile">
                                             <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
-                                                Student Engineer -
+                                                Student Engineer
                                             </p>
                                             <p style={{margin: '0'}}>
                                                 <a href="http://drivesim.osu.edu/" target="_blank" className="company-link"> OSU
@@ -243,7 +243,7 @@ class WorkExp extends React.Component {
                                 <div id="blubrry-info" className="work-info" style={{visibility: 'hidden'}}>
                                     <div className="work-info-top">
                                         <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
-                                            Software Developer Intern -
+                                            Software Developer Intern-
                                         </p>
                                         <a href="https://blubrry.com/" target="_blank" className="company-link"> Blubrry
                                             Podcasting</a>
@@ -267,7 +267,7 @@ class WorkExp extends React.Component {
                                 <div id="te-info" className="work-info">
                                     <div className="work-info-top">
                                         <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
-                                            Software Developer Intern -
+                                            Software Developer Intern-
                                         </p>
                                         <a href="https://www.topechelon.com/" target="_blank" className="company-link"> Top
                                             Echelon Software</a>
@@ -290,7 +290,7 @@ class WorkExp extends React.Component {
                                 <div id="esl-info" className="work-info">
                                     <div className="work-info-top">
                                         <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
-                                            Student Researcher -
+                                            Student Researcher-
                                         </p>
                                         <a href="https://electroscience.osu.edu/about" target="_blank"
                                            className="company-link"> OSU ElectroScience Lab</a>
@@ -314,7 +314,7 @@ class WorkExp extends React.Component {
                                     <div id="dsl-info" className="work-info" style={{overflow: 'hidden'}}>
                                         <div className="work-info-top">
                                             <p style={{color: 'white', display: 'inline-block', margin: '0'}}>
-                                                Student Engineer -
+                                                Student Engineer-
                                             </p>
                                             <a href="http://drivesim.osu.edu/" target="_blank" className="company-link"> OSU
                                                 Driving Simulation Lab</a>
