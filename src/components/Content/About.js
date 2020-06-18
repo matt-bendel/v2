@@ -18,29 +18,23 @@ class About extends React.Component {
                         <div className="row">
                             <div className="col-md-8" style={{color: 'darkgrey', fontSize: '14px'}}>
                                 <p>
-                                    Originally majoring in
-                                    Mathematics, I switched to Electrical and Computer Engineering my second year and
-                                    haven't looked back.
-                                    ECE has allowed me to gain a deeper understanding of how hardware and software interact
+                                    Originally majoring in Mathematics, I switched to Electrical and Computer Engineering my second year and
+                                    haven't looked back. ECE has allowed me to gain a deeper understanding of how hardware and software interact
                                     with one another.
                                 </p>
                                 <p>
                                     Outside of the classroom a variety of experiences, both personal and professional, have
-                                    helped
-                                    sharpen my skills as a developer, and prepare me to perform at the highest level
-                                    possible. You can
-                                    see more about my experiences in the Work and Personal experience sections below.
+                                    helped sharpen my skills as a developer, and prepared me to perform at the highest level
+                                    possible.
                                 </p>
                                 <p>
                                     When not studying for school or working, I enjoy spending time with my family, hanging
-                                    out with my friends,
-                                    working on my personal projects, and playing video games. I love sports, especially
-                                    football, and
-                                    am a huge Browns fan.
+                                    out with my friends, working on my personal projects, and playing video games. I love sports, especially
+                                    football, and am a huge Browns fan.
                                 </p>
                             </div>
-                            <div className="col-md-4" style={{marginTop: '20px', height: '300x', width: '100%', }}>
-                                <div id="1-img" className="img-card" style={{height: '300px', position: 'relative', backgroundImage: 'url(' + josh + ')', backgroundPosition: 'center'}}></div>
+                            <div className="col-md-4 center" style={{marginTop: '20px', height: '300x', width: '100%', }}>
+                                <div id="1-img" className="img-card" style={{height: '300px', position: 'relative', backgroundImage: 'url(' + josh + ')', backgroundPosition: 'center', alignSelf: 'center'}}></div>
                             </div>
                         </div>
                         <div className="closing-bar" style={{marginTop: '50px'}}></div>
@@ -86,8 +80,7 @@ class About extends React.Component {
                                     When not studying for school or working, I enjoy spending time with my family, hanging
                                     out with my friends,
                                     working on my personal projects, and playing video games. I love sports, especially
-                                    football, and
-                                    am a huge Browns fan. I also have a dog named Lulu who I am hoping will
+                                    football, and am a huge Browns fan. I also have a dog named Lulu who I am hoping will
                                     one day be TikTok famous. You can see her, and some pictures that show some more of who I am on the left.
                                 </p>
                             </div>
