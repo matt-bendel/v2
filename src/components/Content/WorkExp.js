@@ -77,8 +77,8 @@ class WorkExp extends React.Component {
                     <div className="content-div-mobile" style={{marginTop: '50px'}}>
                         <p className="page-title" style={{fontSize: '40px'}}>Work Experience</p>
                         <div className="row">
-                            <div className="col-md-4" style={{padding: '0'}}>
-                                <ul className="work-list-mobile" style={{color: 'ghostwhite'}}>
+                            <div className="col-md-4 center" style={{padding: '0'}}>
+                                <ul className="work-list-mobile" style={{color: 'ghostwhite', alignSelf: 'center', textAlign: 'center'}}>
                                     <li style={{margin: '0'}}>
                                         <button style={this.state.blubrry ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
                                             Blubrry
@@ -86,7 +86,7 @@ class WorkExp extends React.Component {
                                     </li>
                                     <li>
                                         <button style={this.state.te ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="te-label" onClick={this.handleClick('te')}>
-                                            Top Echelon
+                                            TE Software
                                         </button>
                                     </li>
                                     <li>
