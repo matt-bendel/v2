@@ -23,7 +23,7 @@ class Contact extends React.Component {
                             </p>
                             <div className={'center'}>
                                 <a href={this.getEmail()} target="_blank" style={{textDecoration: 'none', textAlign: 'center', alignSelf: 'center'}}>
-                                    <div className="btn">Reach Out</div>
+                                    <div className="btn">Contact Me</div>
                                 </a>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ class Contact extends React.Component {
                         </p>
                         <div className={'center'}>
                             <a href={this.getEmail()} target="_blank" style={{textDecoration: 'none', textAlign: 'center', alignSelf: 'center'}}>
-                                <div className="btn">Reach Out</div>
+                                <div className="btn">Contact Me</div>
                             </a>
                         </div>
                     </div>
