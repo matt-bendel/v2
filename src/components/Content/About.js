@@ -39,8 +39,8 @@ class About extends React.Component {
                                     am a huge Browns fan.
                                 </p>
                             </div>
-                            <div className="col-md-4" style={{padding: '0', marginTop: '20px', height: '300x'}}>
-                                <div id="1-img" className="img-card" style={{height: '300px', position: 'relative', backgroundImage: 'url(' + chewie + ')', backgroundPosition: 'center'}}></div>
+                            <div className="col-md-4" style={{marginTop: '20px', height: '300x', width: '100%', }}>
+                                <div id="1-img" className="img-card" style={{height: '300px', position: 'relative', backgroundImage: 'url(' + josh + ')', backgroundPosition: 'center'}}></div>
                             </div>
                         </div>
                         <div className="closing-bar" style={{marginTop: '50px'}}></div>
