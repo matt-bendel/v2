@@ -10,7 +10,7 @@ import AwesomeSliderStyles from './../../css/slider.scss';
 
 class About extends React.Component {
     getAbout () {
-        // if (isMobile) {
+        if (isMobile) {
             return(
                 <div id="about-m" style={{margintTop: '40px', display: 'block', visibility: 'hidden'}}>
                     <div className="content-div-mobile" style={{overflow: 'auto'}}>
@@ -47,7 +47,7 @@ class About extends React.Component {
                     </div>
                 </div>
             );
-        // }
+        }
         return(
             <div id="about" style={{marginTop: '100px', display: 'block', visibility: 'visible'}}>
                 <div className="content-div" style={{marginTop: '50px'}}>

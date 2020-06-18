@@ -7,11 +7,9 @@ class PP extends React.Component {
             return;
         }
         return(
-            <div id="personal-projects" style={{visibility: 'hidden', paddingTop: '100px'}}>
-                <div className="content-div" style={{marginTop: '50px'}}>
-                    <div style={{height: '120px', width: '80%', margin: '0', marginLeft: '5px'}}>
-                        <p className="page-title" style={{fontSize: '65px'}}>Personal Projects</p>
-                    </div>
+            <div id="personal-projects" style={{visibility: 'hidden', paddingTop: '50px'}}>
+                <div className="content-div-mobile" style={{marginTop: '50px'}}>
+                    <p className="page-title" style={{fontSize: '40px'}}>Personal Projects</p>
                     <div className="row">
                         <div className="col-md-8" style={{color: 'darkgrey', fontSize: '14px'}}>
                         </div>
