@@ -75,32 +75,30 @@ class WorkExp extends React.Component {
                 <div id="work-exp" style={{visibility: 'hidden', paddingTop: '100px'}}>
                     <div className="content-div-mobile" style={{marginTop: '50px'}}>
                         <p className="page-title" style={{fontSize: '40px'}}>Work Experience</p>
-                        <div className="row" style={{minHeight: '300px'}}>
-                            <div className="col-md-4" style={{height: '40px'}}>
-                                <ul className="work-list-mobile" style={{color: 'ghostwhite'}}>
-                                    <li style={{margin: '0'}}>
-                                        <button style={this.state.blubrry ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
-                                            Blubrry
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button style={this.state.te ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="te-label" onClick={this.handleClick('te')}>
-                                            TE
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button style={this.state.esl ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="esl-label" onClick={this.handleClick('esl')}>
-                                            ESL
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button style={this.state.dsl ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="dsl-label" onClick={this.handleClick('dsl')}>
-                                            DSL
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="col-md-8">
+                        <div style={{height: '300px'}}>
+                            <ul className="work-list-mobile" style={{color: 'ghostwhite'}}>
+                                <li style={{margin: '0'}}>
+                                    <button style={this.state.blubrry ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
+                                        Blubrry
+                                    </button>
+                                </li>
+                                <li>
+                                    <button style={this.state.te ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="te-label" onClick={this.handleClick('te')}>
+                                        TE
+                                    </button>
+                                </li>
+                                <li>
+                                    <button style={this.state.esl ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="esl-label" onClick={this.handleClick('esl')}>
+                                        ESL
+                                    </button>
+                                </li>
+                                <li>
+                                    <button style={this.state.dsl ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="dsl-label" onClick={this.handleClick('dsl')}>
+                                        DSL
+                                    </button>
+                                </li>
+                            </ul>
+                            <div style={{paddingLeft: '5px'}}>
                                 <Bounce left opposite when={this.state.blubrry}>
                                     <div id="blubrry-info" className="work-info" style={{visibility: 'hidden'}}>
                                         <div className="work-info-top-mobile">
@@ -203,6 +201,9 @@ class WorkExp extends React.Component {
                                     </div>
                                 </Bounce>
                             </div>
+                            {/*<div className="col-md-8" style={{display: 'inline-block'}}>*/}
+                            {/*    */}
+                            {/*</div>*/}
                         </div>
                         <div className="closing-bar"></div>
                     </div>
