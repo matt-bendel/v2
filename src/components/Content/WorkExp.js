@@ -75,7 +75,7 @@ class WorkExp extends React.Component {
                 <div id="work-exp" style={{visibility: 'hidden', paddingTop: '100px'}}>
                     <div className="content-div-mobile" style={{marginTop: '50px'}}>
                         <p className="page-title" style={{fontSize: '40px'}}>Work Experience</p>
-                        <div style={{height: '300px'}}>
+                        <div style={{height: '350px'}}>
                             <ul className="work-list-mobile" style={{color: 'ghostwhite'}}>
                                 <li style={{margin: '0'}}>
                                     <button style={this.state.blubrry ? {color: 'darkseagreen', borderTopColor: 'darkseagreen'} : {}} id="blubrry-label" onClick={this.handleClick('blubrry')}>
@@ -113,7 +113,7 @@ class WorkExp extends React.Component {
                                         <div>
                                             <p style={{color: 'darkgrey', fontFamily: 'Courier New', fontSize: '14px'}}>May 2020 - August 2020</p>
                                         </div>
-                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '12px'}}>
+                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '13px'}}>
                                             <li><span>Created a new page to serve private RSS feeds to validated users using basic http authentication</span>
                                             </li>
                                             <li><span>Helped overhaul Blubrry's publisher system with new designs, and implemented a new onboarding process for users</span>
@@ -139,7 +139,7 @@ class WorkExp extends React.Component {
                                         <div>
                                             <p style={{color: 'darkgrey', fontFamily: 'Courier New', fontSize: '14px'}}>May 2019 - August 2019</p>
                                         </div>
-                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '12px'}}>
+                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '13px'}}>
                                             <li><span>Worked as a full-stack developer on a variety of problems ranging from bug fixes to implementing new features</span>
                                             </li>
                                             <li><span>Worked closely with the team using Agile to develop and plan a new profile feature for recruiters and agencies in the TE Network</span>
@@ -164,7 +164,7 @@ class WorkExp extends React.Component {
                                         <div>
                                             <p style={{color: 'darkgrey', fontFamily: 'Courier New', fontSize: '14px'}}>Jan 2020 - Present</p>
                                         </div>
-                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '12px'}}>
+                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '13px'}}>
                                             <li><span>Working as a student researcher, developing the technology tools we will be using to study EEG signals in young people with concussions</span>
                                             </li>
                                             <li><span>Built an app using the Unity game engine that interfaces with an EEG headset and collects raw data</span>
@@ -189,7 +189,7 @@ class WorkExp extends React.Component {
                                         <div>
                                             <p style={{color: 'darkgrey', fontFamily: 'Courier New', fontSize: '14px'}}>Jan 2020 - Present</p>
                                         </div>
-                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '12px', overflow: 'hidden'}}>
+                                        <ul className="fancy" style={{margin: '0', padding: '0', columnCount: '1', fontSize: '13px', overflow: 'hidden'}}>
                                             <li><span>Working as a student software engineer, developing simulation scenarios using SimCreater</span>
                                             </li>
                                             <li><span>Working with clients to develop to their specific technical needs</span>
