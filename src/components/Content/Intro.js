@@ -29,7 +29,7 @@ class Intro extends React.Component {
                         <div className="col-md-8" style={{color: 'darkgrey', fontSize: '14px'}}>
                             <div>
                                 <p>
-                                    Hi! I'm a fourth year student at the Ohio State University in Columbus, OH graduating in
+                                    Hi! I'm a fourth year student at The Ohio State University in Columbus, OH graduating in
                                     May 2021.
                                 </p>
                                 <p>
@@ -79,7 +79,7 @@ class Intro extends React.Component {
                     <div className="col-md-8" style={{color: 'darkgrey'}}>
                         <div>
                             <p>
-                                Hi! I'm a fourth year student at the Ohio State University in Columbus, OH graduating in
+                                Hi! I'm a fourth year student at The Ohio State University in Columbus, OH graduating in
                                 May 2021.
                             </p>
                             <p>
