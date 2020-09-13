@@ -59,7 +59,7 @@ class TopNav extends React.Component {
             <div className="container-right">
                 <nav className="desktopNav">
                     <ul>
-                        <NavLinks display={'About'} href={'#about'} wait={2750}></NavLinks>
+                        <NavLinks display={'About'} href={'#about-m'} wait={2750}></NavLinks>
                         <NavLinks display={'Work Experience'} href={'#work-exp'} wait={3000}></NavLinks>
                         <NavLinks display={'Personal Projects'} href={'#personal-projects'} wait={3250}></NavLinks>
                         <NavLinks display={'Contact'} href={'#contact'} wait={3500}></NavLinks>

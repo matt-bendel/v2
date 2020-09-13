@@ -25,8 +25,8 @@ class MainContent extends React.Component {
                     <div className="spacer"></div>
                     <WorkExp></WorkExp>
                     <div className="spacer"></div>
-                    <PP></PP>
-                    <div className="spacer"></div>
+                    {/*<PP></PP>*/}
+                    {/*<div className="spacer"></div>*/}
                     <Contact></Contact>
                     <div className="spacer"></div>
                 </div>

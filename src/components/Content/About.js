@@ -7,6 +7,7 @@ import josh from './../../images/josh.png';
 import dis from './../../images/dis.png';
 import AwesomeSlider from 'react-awesome-slider';
 import AwesomeSliderStyles from './../../css/slider.scss';
+import matt from "../../images/matt.png";
 
 class About extends React.Component {
     getAbout () {
@@ -43,21 +44,15 @@ class About extends React.Component {
             );
         }
         return(
-            <div id="about" style={{marginTop: '100px', display: 'block', visibility: 'visible'}}>
+            <div id="about-m" style={{marginTop: '100px', display: 'block', visibility: 'hidden'}}>
                 <div className="content-div" style={{marginTop: '50px'}}>
                     <div style={{height: '120px', width: '80%', margin: '0', marginLeft: '5px', marginBottom: '3%'}}>
-                        <p className="page-title" style={{fontSize: '65px'}}>About</p>
+                        <p className="page-title" style={{fontSize: '65px'}}>About Me</p>
                     </div>
                     <div className="row" style={{height: '500px'}}>
                         <div className="col-md-4" style={{padding: '0'}}>
                             <div style={{margin: '0', marginTop: '15px', bottom: '0'}}>
-                                <AwesomeSlider fillParent={true} cssModule={AwesomeSliderStyles}>
-                                    <div data-src={dis}/>
-                                    <div data-src={fam}/>
-                                    <div data-src={josh}/>
-                                    <div data-src={chewie}/>
-                                    <div data-src={lulu}/>
-                                </AwesomeSlider>
+                                <div className="img-card" style={{height: '400px', position: 'relative', backgroundImage: 'url(' + fam + ')', backgroundPosition: 'center', alignSelf: 'center'}}></div>
                             </div>
                         </div>
                         <div className="col-md-8" style={{color: 'darkgrey', fontSize: '16px'}}>
@@ -70,15 +65,14 @@ class About extends React.Component {
                                     with one another.
                                 </p>
                                 <p>
-                                    Outside of the classroom a variety of experiences, both personal and professional, have
+                                    Outside of the classroom, a variety of experiences, both personal and professional, have
                                     helped sharpen my skills as a developer, and prepare me to perform at the highest level
-                                    possible. You can see more about my experiences in the Work and Personal experience sections below.
+                                    possible. You can see more about my experiences in the Work Experience and Personal Projects sections below.
                                 </p>
                                 <p>
                                     When not studying for school or working, I enjoy spending time with my family, hanging
                                     out with my friends, working on my personal projects, and playing video games. I love sports, especially
-                                    football, and am a huge Browns fan. I also have a dog named Lulu who I am hoping will
-                                    one day be TikTok famous. You can see her, and some pictures that show some more of who I am, on the left.
+                                    football, and am a huge Browns fan.
                                 </p>
                             </div>
                         </div>
