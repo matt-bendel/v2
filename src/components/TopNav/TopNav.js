@@ -35,7 +35,7 @@ class TopNav extends React.Component {
                             <a id="work-exp-li" className="mobileMenu" onClick={() => this.closeMenu()} href="#work-exp">Work Experience</a>
                             <a id="personal-projects-li" className="mobileMenu" onClick={() => this.closeMenu()} href="#personal-projects">My Projects</a>
                             <a id="contact-li" className="mobileMenu" onClick={() => this.closeMenu()} href="#contact">Contact</a>
-                            <a id="resume-li" className="mobileMenu" onClick={() => this.closeMenu()} href="#">Resume</a>
+                            {/*<a id="resume-li" className="mobileMenu" onClick={() => this.closeMenu()} href="#">Resume</a>*/}
                         </Menu>
                     </div>
                     <div className="container-right">
@@ -63,7 +63,7 @@ class TopNav extends React.Component {
                         <NavLinks display={'Work Experience'} href={'#work-exp'} wait={3000}></NavLinks>
                         <NavLinks display={'Personal Projects'} href={'#personal-projects'} wait={3250}></NavLinks>
                         <NavLinks display={'Contact'} href={'#contact'} wait={3500}></NavLinks>
-                        <NavLinks display={'Resume'} href={'#'} wait={3750} resume={true}></NavLinks>
+                        {/*<NavLinks display={'Resume'} href={'/images/resume_current.pdf'} wait={3750} resume={true}></NavLinks>*/}
                     </ul>
                 </nav>
             </div>

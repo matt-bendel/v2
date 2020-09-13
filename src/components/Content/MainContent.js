@@ -47,9 +47,9 @@ class MainContent extends React.Component {
                 <div className="spacer"></div>
                 <WorkExp></WorkExp>
                 <div className="spacer"></div>
-                    <PP></PP>
+                <PP></PP>
                 <div className="spacer"></div>
-                    <Contact></Contact>
+                <Contact></Contact>
                 <div className="spacer" style={{height: '100px'}}></div>
             </div>
         );
